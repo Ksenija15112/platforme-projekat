@@ -1,0 +1,185 @@
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.lref
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.exe
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.deps.json
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.runtimeconfig.json
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.g.resources
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfoInputs.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfo.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.CoreCompileInputs.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\refint\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.genruntimeconfig.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ref\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.baml
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.exe
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.deps.json
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.runtimeconfig.json
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.lref
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.baml
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.g.resources
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfoInputs.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfo.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.CoreCompileInputs.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\refint\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.genruntimeconfig.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ref\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF mid\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.exe
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.deps.json
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.runtimeconfig.json
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.lref
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.baml
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.g.resources
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfoInputs.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfo.cs
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.CoreCompileInputs.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\refint\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.genruntimeconfig.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ref\ObavezeWPF.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.AssemblyReference.cache
+C:\Users\nenadtodorovic\source\repos\ObavezeWPF Binding\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.Up2Date
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.exe
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.deps.json
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.runtimeconfig.json
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Diagnostics.EventLog.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.AssemblyReference.cache
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.cache
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.lref
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.baml
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.g.resources
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfoInputs.cache
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.AssemblyInfo.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.csproj.Up2Date
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\refint\ObavezeWPF.dll
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.pdb
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.genruntimeconfig.cache
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ref\ObavezeWPF.dll

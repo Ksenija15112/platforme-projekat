@@ -1,0 +1,85 @@
+﻿<Window x:Class="ObavezeWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObavezeWPF"
+        xmlns:util="clr-namespace:ObavezeWPF.UIUtils"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <util:PriorityToStringConverter x:Key="PriorityConverter" />
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Dodati meni, toolbar, data grid -->
+        <Menu 
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="3">
+            <MenuItem
+                Header="Entities">
+                <MenuItem Header="Categories" />
+                <MenuItem Header="States" />
+                <MenuItem Header="Tasks" />
+            </MenuItem>
+        </Menu>
+
+        <ToolBarTray
+            Grid.Row="1"
+            Grid.Column="0"
+            Grid.ColumnSpan="3">
+            <ToolBar>
+                <Button Name="AddBtn" Content="Add" Click="AddBtn_Click" />
+                <Button Name="EditBtn" Content="Edit" RenderTransformOrigin="0.5,0.5" Click="EditBtn_Click"/>
+                <Button Content="Delete" />
+            </ToolBar>
+        </ToolBarTray>
+
+        <StackPanel
+            Grid.Row="2"
+            Grid.Column="1"
+            Orientation="Horizontal"
+            Margin="2">
+            <Label Content="Title:" />
+            <TextBox 
+                Width="150"
+                Text="{Binding Path=TitleSearchQuery, UpdateSourceTrigger=PropertyChanged}"
+                />
+        </StackPanel>
+        
+
+        <DataGrid
+            ItemsSource="{Binding Path=TasksView}"
+            Name="TasksDG"
+            Grid.Row="3"
+            Grid.Column="1"
+            AutoGenerateColumns="False"
+            IsReadOnly="True"
+            CanUserAddRows="False"
+            ColumnWidth="*"
+            >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="Auto" Binding="{Binding Path=Id}" />
+                <DataGridTextColumn Header="Title" Width="Auto" Binding="{Binding Path=Title}" />
+                <DataGridTextColumn Header="Description" Width="*" Binding="{Binding Path=Description}" />
+                <DataGridTextColumn Header="Due Date" Binding="{Binding Path=DueDateTime}" />
+                <DataGridTextColumn Header="Priority" Binding="{Binding Path=Priority, Converter={StaticResource PriorityConverter}}" />
+                <DataGridTextColumn Header="Category" Binding="{Binding Path=Category.Name}" />
+                <DataGridTextColumn Header="State" Binding="{Binding Path=State.Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
