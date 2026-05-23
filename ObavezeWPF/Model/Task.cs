@@ -11,8 +11,10 @@ namespace ObavezeWPF.Model
         public int Id { get; set; }
         public string Title { get; set; }
         public string? Description { get; set; }
-        public Priority Priority { get; set; }
         public DateTime? DueDateTime { get; set; }
+        public DateTime StartDate { get; set; }
+        public int StoryPoints { get; set; }
+
         public int CategoryId { get; set; }
         //public string CategoryName { get { return category?.Name; } }
         protected Category? category { get; set; }
@@ -29,6 +31,47 @@ namespace ObavezeWPF.Model
                 {
                     category = null;
                     CategoryId = 0;
+                }
+            }
+        }
+
+        public int LabelId { get; set; }
+        protected Label? label { get; set; }
+        public Label? Label
+        {
+            get { return label; }
+
+            set
+            {
+                if (value != null)
+                {
+                    label = value;
+                    LabelId = value.Id;
+                }
+                else
+                {
+                    label = null;
+                    LabelId = 0;
+                }
+            }
+        }
+        public int UserId { get; set; }
+        protected User? user { get; set; }
+        public User? User
+        {
+            get { return user; }
+
+            set
+            {
+                if (value != null)
+                {
+                    user= value;
+                    UserId = value.Id;
+                }
+                else
+                {
+                    user = null;
+                    UserId = 0;
                 }
             }
         }
@@ -55,7 +98,7 @@ namespace ObavezeWPF.Model
 
         public override string ToString()
         {
-            return $"{Id}, {Title}, {Description}, {DueDateTime}, {Category?.Name}, {State?.Name}";
+            return $"{Id}, {Title}, {Description}, {DueDateTime}, {Category?.Name}, {State?.Name},{StartDate},{StoryPoints},{Label?.Name},{User?.Name}";
         }
 
         public override bool Equals(object? obj)
@@ -79,9 +122,12 @@ namespace ObavezeWPF.Model
                 Title = Title,
                 Description = Description,
                 DueDateTime = DueDateTime,
-                Priority = Priority,
                 Category = Category,
                 State = State,
+                StartDate=StartDate,
+                StoryPoints=StoryPoints,
+                Label=Label,
+                User=User,
             };
         }
     }
