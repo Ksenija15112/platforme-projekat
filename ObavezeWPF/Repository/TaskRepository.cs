@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.Win32.SafeHandles;
 using ObavezeWPF.Model;
 using System;
 using System.Collections.Generic;
@@ -64,12 +65,18 @@ namespace ObavezeWPF.Repository
                 var idIndex = reader.GetOrdinal("TaskID");
                 var titleIndex = reader.GetOrdinal("Title");
                 var descriptionIndex = reader.GetOrdinal("Description");
-                var priorityIndex = reader.GetOrdinal("Priority");
+                
                 var dueDateIndex = reader.GetOrdinal("DueDate");
                 var categoryIdIndex = reader.GetOrdinal("CategoryID");
                 var categoryNameIndex = reader.GetOrdinal("CategoryName");
                 var stateIdIndex = reader.GetOrdinal("StateID");
                 var stateNameIndex = reader.GetOrdinal("StateName");
+                var startDateIndex = reader.GetOrdinal("StartDate");
+                var storyPointsIndex = reader.GetOrdinal("StoryPoints");
+                var LabelIdIndex = reader.GetOrdinal("LabelId");
+                var UserIdIndex = reader.GetOrdinal("UserId");
+
+
 
                 while (reader.Read())
                 {
@@ -78,8 +85,11 @@ namespace ObavezeWPF.Repository
                         Id = reader.GetInt32(idIndex),
                         Title = reader.GetString(titleIndex),
                         Description = reader.IsDBNull(descriptionIndex) ? null : reader.GetString(descriptionIndex),
-                        Priority = (Priority)Enum.Parse(typeof(Priority), reader.GetString(priorityIndex)),
                         DueDateTime = reader.IsDBNull(dueDateIndex) ? null : reader.GetDateTime(dueDateIndex),
+                        StartDate = reader.GetDateTime(startDateIndex),
+                        StoryPoints=reader.GetInt32(storyPointsIndex),
+                        LabelId=reader.GetInt32(LabelIdIndex),
+                        UserId=reader.GetInt32(UserIdIndex),
                         CategoryId = reader.GetInt32(categoryIdIndex),
                         Category = new Category()
                         {
@@ -122,18 +132,21 @@ namespace ObavezeWPF.Repository
 
                 SqlCommand command = conn.CreateCommand();
                 command.CommandText = @"
-                INSERT INTO Tasks (Title, Description, Priority, DueDate, CategoryID, StateID) 
+                INSERT INTO Tasks (Title, Description, DueDate, TaskCategoryID, TaskStateID,StartDate,StoryPoints,LabelID,UserID) 
                 output inserted.id 
-                VALUES (@Title, @Description, @Priority, @DueDate, @CategoryID, @StateID)";
+                VALUES (@Title, @Description, @DueDate, @CategoryID, @StateID,@StartDate,@StoryPoints,@LabelID,@UserID)";
 
 
 
                 command.Parameters.Add(new SqlParameter("Title", task.Title));
                 command.Parameters.Add(new SqlParameter("Description", task.Description));
-                command.Parameters.Add(new SqlParameter("Priority", task.Priority.ToString()));
                 command.Parameters.Add(new SqlParameter("DueDate", task.DueDateTime != null ? ((DateTime)task.DueDateTime).ToString("yyyy-MM-dd") : null));
-                command.Parameters.Add(new SqlParameter("TaskCategoryID", task.CategoryId));
-                command.Parameters.Add(new SqlParameter("TaskStateID", task.StateId));
+                command.Parameters.Add(new SqlParameter("CategoryID", task.CategoryId));
+                command.Parameters.Add(new SqlParameter("StateID", task.StateId));
+                command.Parameters.Add(new SqlParameter("StartDate", task.StartDate));
+                command.Parameters.Add(new SqlParameter("StoryPoints", task.StoryPoints));
+                command.Parameters.Add(new SqlParameter("LabelID", task.LabelId));
+                command.Parameters.Add(new SqlParameter("UserID", task.UserId));
 
                 var taskId = (int)command.ExecuteScalar();
             }
@@ -148,20 +161,36 @@ namespace ObavezeWPF.Repository
                 SqlCommand command = conn.CreateCommand();
                 command.CommandText = @"
                 UPDATE Tasks
-                SET Title = @Title, Description = @Description, Priority = @Priority, DueDate = @DueDate, TaskCategoryID = @TaskCategoryID, TaskStateID = @TaskStateID
+                SET Title = @Title, Description = @Description, DueDate = @DueDate, TaskCategoryID = @CategoryID, TaskStateID = @StateID,StartDate=@StartDate,StoryPoints=@StoryPoints,LabelID=@LabelID,UserID=@UserID
                 WHERE TaskID = @TaskID
                 ";
 
                 command.Parameters.Add(new SqlParameter("TaskID", task.Id));
                 command.Parameters.Add(new SqlParameter("Title", task.Title));
                 command.Parameters.Add(new SqlParameter("Description", task.Description));
-                command.Parameters.Add(new SqlParameter("Priority", task.Priority.ToString()));
                 command.Parameters.Add(new SqlParameter("DueDate", task.DueDateTime != null ? ((DateTime)task.DueDateTime).ToString("yyyy-MM-dd") : null));
-                command.Parameters.Add(new SqlParameter("TaskCategoryID", task.CategoryId));
-                command.Parameters.Add(new SqlParameter("TaskStateID", task.StateId));
+                command.Parameters.Add(new SqlParameter("CategoryID", task.CategoryId));
+                command.Parameters.Add(new SqlParameter("StateID", task.StateId));
+                command.Parameters.Add(new SqlParameter("StartDate", task.StartDate));
+                command.Parameters.Add(new SqlParameter("StoryPoints", task.StoryPoints));
+                command.Parameters.Add(new SqlParameter("LabelID", task.LabelId));
+                command.Parameters.Add(new SqlParameter("UserID", task.UserId));
 
                 command.ExecuteNonQuery();
             }
+        }
+
+        public void Delete(int Id)
+        {
+            string connectionString = @"Data Source=10.37.129.2;Initial Catalog=obavezetestdb;User ID=sa;Password=YourStrong@Passw0rd;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            SqlCommand command = conn.CreateCommand();
+            command.CommandText = "DELETE FROM Tasks where TaskID=@TaskID";
+            SqlParameter parameter = new SqlParameter("TaskID",Id);
+            command.Parameters.Add(parameter);
+            command.ExecuteNonQuery();
+            conn.Close();
         }
 
         public bool IsInitialized()
