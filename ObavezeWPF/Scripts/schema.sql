@@ -26,4 +26,8 @@ CREATE TABLE Tasks (
 ALTER TABLE Tasks
 ADD StartDate DATETIME;
 
+ALTER TABLE Tasks
+ADD StoryPoints smallint;
+
+
 

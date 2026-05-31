@@ -9,11 +9,11 @@ namespace ObavezeWPF.Model
     public class Task : ICloneable
     {
         public int Id { get; set; }
-        public string Title { get; set; }
+        public string Title { get; set; } = "";
         public string? Description { get; set; }
         public DateTime? DueDateTime { get; set; }
         public DateTime StartDate { get; set; }
-        public int StoryPoints { get; set; }
+        public short StoryPoints { get; set; }
 
         public int CategoryId { get; set; }
         //public string CategoryName { get { return category?.Name; } }

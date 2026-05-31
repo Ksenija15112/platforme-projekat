@@ -11,7 +11,7 @@ namespace ObavezeWPF.CSVConverters
     {
         public static string ToCSV(this Model.Task task)
         {
-            return $"{task.Id},{task.Title},{task.Description},{task.Priority},{task.DueDateTime},{task.Category?.Id},{task.State?.Id}";
+            return $"{task.Id},{task.Title},{task.Description},{task.DueDateTime},{task.Category?.Id},{task.State?.Id}";
         }
 
 
@@ -24,7 +24,7 @@ namespace ObavezeWPF.CSVConverters
             task.Id = int.Parse(parts[0]);
             task.Title = parts[1];
             task.Description = parts[2];
-            task.Priority = (Priority)Enum.Parse(typeof(Priority), parts[3]);
+      
             task.DueDateTime = DateTime.Parse(parts[4]);
 
             if (!string.IsNullOrEmpty(parts[5]))

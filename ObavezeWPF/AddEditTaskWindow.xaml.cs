@@ -48,7 +48,7 @@ namespace ObavezeWPF
         {
             // Popuniti State i Category ComboBoxes
             // Ako je edit u pitanju, postaviti vrednosti...
-            PriorityCB.ItemsSource = Enum.GetValues(typeof(Priority));
+        
             CategoryCB.ItemsSource = categoryService.GetAll();
             StateCB.ItemsSource = stateService.GetAll();
             

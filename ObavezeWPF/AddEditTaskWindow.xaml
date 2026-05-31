@@ -91,9 +91,7 @@
             Margin="5"/>
         
 
-        <Label Content="Priority:"
-            Grid.Row="4"
-            Grid.Column="1"/>
+        
 
         <ComboBox 
             Name="PriorityCB"

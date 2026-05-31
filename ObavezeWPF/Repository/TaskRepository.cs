@@ -11,7 +11,7 @@ namespace ObavezeWPF.Repository
 {
     public class TaskRepository : ITaskRepository
     {
-        const string CONNECTION_STRING = "Data Source=10.37.129.2;Initial Catalog=obavezetestdb;User ID=sa;Password=YourStrong@Passw0rd;Trust Server Certificate=True";
+        const string CONNECTION_STRING = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
         public Model.Task? Get(int id)
         {
             using (SqlConnection conn = new SqlConnection(CONNECTION_STRING))
@@ -87,7 +87,7 @@ namespace ObavezeWPF.Repository
                         Description = reader.IsDBNull(descriptionIndex) ? null : reader.GetString(descriptionIndex),
                         DueDateTime = reader.IsDBNull(dueDateIndex) ? null : reader.GetDateTime(dueDateIndex),
                         StartDate = reader.GetDateTime(startDateIndex),
-                        StoryPoints=reader.GetInt32(storyPointsIndex),
+                        StoryPoints=reader.GetInt16(storyPointsIndex),
                         LabelId=reader.GetInt32(LabelIdIndex),
                         UserId=reader.GetInt32(UserIdIndex),
                         CategoryId = reader.GetInt32(categoryIdIndex),
@@ -182,7 +182,7 @@ namespace ObavezeWPF.Repository
 
         public void Delete(int Id)
         {
-            string connectionString = @"Data Source=10.37.129.2;Initial Catalog=obavezetestdb;User ID=sa;Password=YourStrong@Passw0rd;Trust Server Certificate=True";
+            string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             SqlCommand command = conn.CreateCommand();

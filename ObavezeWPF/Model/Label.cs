@@ -21,5 +21,6 @@ namespace ObavezeWPF.Model
             this.Description = Description;
             this.Color = Color;
         }
+        public Label() { }
     }
 }

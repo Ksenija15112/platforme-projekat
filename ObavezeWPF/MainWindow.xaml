@@ -7,9 +7,7 @@
         xmlns:util="clr-namespace:ObavezeWPF.UIUtils"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Window.Resources>
-        <util:PriorityToStringConverter x:Key="PriorityConverter" />
-    </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -76,7 +74,7 @@
                 <DataGridTextColumn Header="Title" Width="Auto" Binding="{Binding Path=Title}" />
                 <DataGridTextColumn Header="Description" Width="*" Binding="{Binding Path=Description}" />
                 <DataGridTextColumn Header="Due Date" Binding="{Binding Path=DueDateTime}" />
-                <DataGridTextColumn Header="Priority" Binding="{Binding Path=Priority, Converter={StaticResource PriorityConverter}}" />
+             
                 <DataGridTextColumn Header="Category" Binding="{Binding Path=Category.Name}" />
                 <DataGridTextColumn Header="State" Binding="{Binding Path=State.Name}" />
             </DataGrid.Columns>
