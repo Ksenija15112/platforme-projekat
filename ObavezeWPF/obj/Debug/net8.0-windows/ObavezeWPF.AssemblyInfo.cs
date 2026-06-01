@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ObavezeWPF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99e94cf39101982271e453f8cbb789bf873fa4ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a51eacb36aa34b6ae5b627074499ccc29b1acb4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ObavezeWPF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ObavezeWPF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
