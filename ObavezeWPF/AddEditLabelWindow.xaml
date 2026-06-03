@@ -1,0 +1,32 @@
+﻿<Window x:Class="ObavezeWPF.AddEditLabelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObavezeWPF"
+        mc:Ignorable="d"
+        Title="AddEditLabelWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="NameIspis" Grid.Row="0" HorizontalAlignment="Left" Text="Name:" FontSize="30" Width="300"/>
+        <TextBox Name="NameUnos" Grid.Row="0" HorizontalAlignment="Right" Width="500" FontSize="30" Text="{Binding Name}"/>
+        <TextBlock Name="DescriptionIspis" Grid.Row="1" HorizontalAlignment="Left" Text="Description:" FontSize="30" Width="300"/>
+        <TextBox Name="DescriptionUnos" Grid.Row="1" HorizontalAlignment="Right" Width="500" FontSize="30" Text="{Binding Description}"/>
+        <TextBlock Name="ColorIspis" Grid.Row="2" HorizontalAlignment="Left" Text="Color:" FontSize="30" Width="300"/>
+        <ComboBox Name="ColorOdaberi" Grid.Row="2" HorizontalAlignment="Right" Width="500" FontSize="30" SelectedItem="{Binding Color}" >
+            <ComboBoxItem Content="Red"/>
+            <ComboBoxItem Content="Blue"/>
+            <ComboBoxItem Content="Green"/>
+            <ComboBoxItem Content="Yellow"/>
+            <ComboBoxItem Content="Black"/>
+            <ComboBoxItem Content="White"/>
+        </ComboBox>
+        <Button Name="dugmeSave" Grid.Row="3" Width="300"  HorizontalAlignment="Left"  Content="Save" FontSize="30" Click="dugmeSave_Click"/>
+        <Button Name="dugmeCancel" Grid.Row="3" Width="300" HorizontalAlignment="Right" Content="Cancel" FontSize="30" Click="dugmeCancel_Click"/>
+    </Grid>
+</Window>
