@@ -8,9 +8,15 @@
     <Compile Update="AddEditTaskWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="LabelsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AddEditLabelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LabelsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

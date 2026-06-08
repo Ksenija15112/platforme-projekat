@@ -22,6 +22,8 @@ namespace ObavezeWPF
     {
         TaskService taskService;
 
+        LabelService labelService;
+
         private string titleSearchQuery = string.Empty;
         public string TitleSearchQuery
         {
@@ -45,7 +47,13 @@ namespace ObavezeWPF
             TasksView = CollectionViewSource.GetDefaultView(tasks);
             TasksView.Filter = (task) => (task as Model.Task).Title.Contains(TitleSearchQuery ?? "");
 
+            LabelRepository labelRepository = new LabelRepository();
+            labelService = new LabelService(labelRepository);
+
+
             DataContext = this;
+
+
 
 
         }
@@ -72,6 +80,11 @@ namespace ObavezeWPF
                     TasksDG.ItemsSource = taskService.GetAll();
                 }
             }
+        }
+        private void labelsClick(object sender, RoutedEventArgs e)
+        {
+            LabelsWindow labelsWindow = new LabelsWindow();
+            labelsWindow.ShowDialog();
         }
     }
 }

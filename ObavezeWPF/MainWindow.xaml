@@ -32,6 +32,7 @@
                 <MenuItem Header="Categories" />
                 <MenuItem Header="States" />
                 <MenuItem Header="Tasks" />
+                <MenuItem Header="Labels" Click="labelsClick" />
             </MenuItem>
         </Menu>
 

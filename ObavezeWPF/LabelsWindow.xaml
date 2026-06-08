@@ -1,0 +1,31 @@
+﻿<Window x:Class="ObavezeWPF.LabelsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ObavezeWPF"
+        mc:Ignorable="d"
+        Title="LabelsWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+            <DataGrid Name="tabelaLabel" AutoGenerateColumns="False" FontSize="30">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>
+                <DataGridTextColumn Header="Description" Width="*" Binding="{Binding Description}"/>
+                <DataGridTextColumn Header="Color" Width="*" Binding="{Binding Color}"/>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Button Name="dugmeAdd" Margin="10" Width="100" Height="100" Content="Add" FontSize="30" Click="dugmeAdd_Click"  />
+            <Button Margin="10" Width="100" Height="100" Content="Edit" FontSize="30" />
+            <Button Margin="10" Width="100" Height="100" Content="Delete" FontSize="30" />
+        </StackPanel>
+
+    </Grid>
+</Window>

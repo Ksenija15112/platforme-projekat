@@ -184,3 +184,7 @@ C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.genruntimeconfig.cache
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ref\ObavezeWPF.dll
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF.sourcelink.json
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditLabelWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditLabelWindow.baml
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\LabelsWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\LabelsWindow.baml

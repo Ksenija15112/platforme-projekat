@@ -12,6 +12,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -26,7 +27,7 @@ namespace ObavezeWPF
         public AddEditLabelWindow()
         {
             InitializeComponent();
-            DataContext = new Label();
+            DataContext = new Model.Label();
             Repository.LabelRepository labelRepository = new Repository.LabelRepository();
             labelService = new LabelService(labelRepository);
         }
@@ -40,6 +41,22 @@ namespace ObavezeWPF
                 string izabrano = (ColorOdaberi.SelectedItem as ComboBoxItem).Content.ToString();
                 label.Color = izabrano;
             }
+            if (string.IsNullOrWhiteSpace(label.Name))
+            {
+                MessageBox.Show("Name is required.");
+                return;
+            }
+            else if (string.IsNullOrWhiteSpace(label.Description))
+            {
+                MessageBox.Show("Description is required.");
+                return;
+            }
+            else if (string.IsNullOrWhiteSpace(label.Color))
+            {
+                MessageBox.Show("Color is required.");
+                return;
+            }
+           
             labelService.Dodaj(label);
             DialogResult = true;
             Close();
