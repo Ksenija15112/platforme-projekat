@@ -24,13 +24,26 @@ namespace ObavezeWPF
     public partial class AddEditLabelWindow : Window
     {
         Service.LabelService labelService;
+
+        bool isEdit = false;
         public AddEditLabelWindow()
         {
             InitializeComponent();
             DataContext = new Model.Label();
             Repository.LabelRepository labelRepository = new Repository.LabelRepository();
             labelService = new LabelService(labelRepository);
+            isEdit = false;
         }
+
+        public AddEditLabelWindow(Model.Label label)
+        {
+            InitializeComponent();
+            DataContext = label;
+            Repository.LabelRepository labelRepository = new Repository.LabelRepository();
+            labelService = new LabelService(labelRepository);
+            isEdit = true;
+        }
+
 
         private void dugmeSave_Click(object sender, RoutedEventArgs e)
         {
@@ -57,7 +70,15 @@ namespace ObavezeWPF
                 return;
             }
            
-            labelService.Dodaj(label);
+
+            if (isEdit == true)
+            {
+                labelService.Izmeni(label);
+            }
+            else
+            {
+                labelService.Dodaj(label);
+            }
             DialogResult = true;
             Close();
         }

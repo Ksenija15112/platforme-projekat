@@ -36,5 +36,49 @@ namespace ObavezeWPF
             addEditLabelWindow.ShowDialog();
             tabelaLabel.ItemsSource = labelService.Iscitaj();
         }
+
+        private void dugmeEdit_Click(object sender, RoutedEventArgs e)
+        {
+            if (tabelaLabel.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a label.");
+                return;
+            }
+            
+            Model.Label promenljiva = (Model.Label) tabelaLabel.SelectedItem;
+            
+
+            AddEditLabelWindow editLabelWindow = new AddEditLabelWindow(promenljiva);
+            editLabelWindow.ShowDialog();
+            tabelaLabel.ItemsSource = labelService.Iscitaj();
+
+
+        }
+
+        private void dugmeDelete_Click(object sender, RoutedEventArgs e)
+        {
+            if (tabelaLabel.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a label.");
+                return;
+            }
+            Model.Label promenljiva = (Model.Label)tabelaLabel.SelectedItem;
+
+            MessageBoxResult odgovor = MessageBox.Show(
+            "Are you sure you want to delete this label?",
+            "Delete",
+             MessageBoxButton.YesNo
+            );
+
+            if (odgovor == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                labelService.Obrisi(promenljiva.Id);
+                tabelaLabel.ItemsSource = labelService.Iscitaj();
+            }
+        }
     }
 }

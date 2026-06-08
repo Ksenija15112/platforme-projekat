@@ -18,7 +18,7 @@
         <TextBlock Name="DescriptionIspis" Grid.Row="1" HorizontalAlignment="Left" Text="Description:" FontSize="30" Width="300"/>
         <TextBox Name="DescriptionUnos" Grid.Row="1" HorizontalAlignment="Right" Width="500" FontSize="30" Text="{Binding Description}"/>
         <TextBlock Name="ColorIspis" Grid.Row="2" HorizontalAlignment="Left" Text="Color:" FontSize="30" Width="300"/>
-        <ComboBox Name="ColorOdaberi" Grid.Row="2" HorizontalAlignment="Right" Width="500" FontSize="30" SelectedItem="{Binding Color}" >
+        <ComboBox Name="ColorOdaberi" Grid.Row="2" HorizontalAlignment="Right" Width="500" FontSize="30">
             <ComboBoxItem Content="Red"/>
             <ComboBoxItem Content="Blue"/>
             <ComboBoxItem Content="Green"/>

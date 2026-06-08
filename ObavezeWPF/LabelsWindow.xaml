@@ -23,8 +23,8 @@
         </DataGrid>
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
             <Button Name="dugmeAdd" Margin="10" Width="100" Height="100" Content="Add" FontSize="30" Click="dugmeAdd_Click"  />
-            <Button Margin="10" Width="100" Height="100" Content="Edit" FontSize="30" />
-            <Button Margin="10" Width="100" Height="100" Content="Delete" FontSize="30" />
+            <Button  Name="dugmeEdit" Margin="10" Width="100" Height="100" Content="Edit" FontSize="30" Click="dugmeEdit_Click" />
+            <Button Name="dugmeDelete" Margin="10" Width="100" Height="100" Content="Delete" FontSize="30" Click="dugmeDelete_Click" />
         </StackPanel>
 
     </Grid>
