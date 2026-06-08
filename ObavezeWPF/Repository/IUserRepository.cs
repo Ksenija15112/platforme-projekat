@@ -8,5 +8,14 @@ namespace ObavezeWPF.Repository
 {
     public interface IUserRepository
     {
+            void Dodaj(Model.User user);
+
+            List<Model.User> Iscitaj();
+
+            void Izmeni(Model.User user);
+
+            void Obrisi(int Id);
+
+        
     }
 }

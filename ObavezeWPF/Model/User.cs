@@ -21,5 +21,7 @@ namespace ObavezeWPF.Model
             this.Email = Email;
             this.Password = Password;
         }
+
+        public User() { }
     }
 }
