@@ -1,4 +1,5 @@
-﻿using ObavezeWPF.CSVConverters;
+﻿using Microsoft.Data.SqlClient;
+using ObavezeWPF.CSVConverters;
 using ObavezeWPF.Model;
 using System;
 using System.Collections.Generic;
@@ -15,21 +16,40 @@ namespace ObavezeWPF.Repository
         {
             var categories = new List<Category>();
 
-            if (!IsInitialized())
-            {
-                return categories;
-            }
+            /* if (!IsInitialized())
+             {
+                 return categories;
+             }
 
-            using (var sr = new StreamReader("categories.csv"))
-            {
-                var line = string.Empty;
+             using (var sr = new StreamReader("categories.csv"))
+             {
+                 var line = string.Empty;
 
-                while ((line = sr.ReadLine()) != null)
-                {
-                    var category = CategoryCSVConverter.FromCSV(line);
-                    categories.Add(category);
-                }
+                 while ((line = sr.ReadLine()) != null)
+                 {
+                     var category = CategoryCSVConverter.FromCSV(line);
+                     categories.Add(category);
+                 }
+             }*/
+
+            string connectionString =@"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            SqlCommand command = conn.CreateCommand();
+            command.CommandText = "select*from Categories";
+            var reader =command.ExecuteReader();
+            while (reader.Read())
+            {
+                Model.Category category = new Model.Category();
+                category.Id =Convert.ToInt32(reader["CategoryID"]);
+                category.Name = reader["CategoryName"].ToString();
+                category.IsActive = Convert.ToBoolean(reader["IsCategoryActive"]);
+                categories.Add(category);
+
             }
+            conn.Close();
+            
+
 
             return categories;
         }

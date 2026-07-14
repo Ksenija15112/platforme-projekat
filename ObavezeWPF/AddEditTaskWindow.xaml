@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ObavezeWPF"
         xmlns:utils="clr-namespace:ObavezeWPF.UIUtils"
         mc:Ignorable="d"
-        Title="AddEditTask" Height="400" Width="390">
+        Title="AddEditTask" Height="550" Width="390">
     <Window.Resources>
         <ControlTemplate x:Key="ErrorControl">
             <DockPanel>
@@ -33,15 +33,27 @@
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <!--prvi-->
             <RowDefinition Height="30"/>
+            <!--drugi-->
+            <RowDefinition Height="Auto"/>
+            <!--treci-->
+            <RowDefinition Height="Auto"/>
+            <!--cetvrti-->
+            <RowDefinition Height="Auto"/>
+            <!--peti-->
+            <RowDefinition Height="Auto"/>
+            <!--sesti-->
+            <RowDefinition Height="Auto"/>
+            <!--sedmi-->
+            <RowDefinition Height="Auto"/>
+            <!--osmi-->
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
+            <!--deveti-->
             <RowDefinition Height="*"/>
+            
+            <!--deseti-->
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
@@ -117,30 +129,32 @@
         </DatePicker>
 
         <Label Content="Category:"
-            Grid.Row="6"
+            Grid.Row="7"
             Grid.Column="1"/>
         
         <ComboBox 
             Name="CategoryCB"
             SelectedItem="{Binding Path=Category}"
             DisplayMemberPath="Name"
-            Grid.Row="6"
+            Grid.Row="7"
             Grid.Column="2"
             Margin="5"/>
 
         <Label Content="State:"
-            Grid.Row="7"
+            Grid.Row="8"
             Grid.Column="1"/>
         <ComboBox 
             Name="StateCB"
             DisplayMemberPath="Name"
             SelectedItem="{Binding Path=State}"
-            Grid.Row="7"
+            Grid.Row="8"
             Grid.Column="2"
             Margin="5"/>
+        <Label Grid.Row="6" Grid.Column="1" Content="Start Date:"/>
+        <DatePicker Grid.Row="6" Grid.Column="2" Name="pocetniDatum"   SelectedDate="{Binding StartDate}" />
 
         <StackPanel 
-            Grid.Row="9"
+            Grid.Row="10"
             Grid.Column="2"
             Orientation="Horizontal"
             FlowDirection="RightToLeft"

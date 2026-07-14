@@ -38,7 +38,7 @@ namespace ObavezeWPF
             stateService = new StateService(stateRepo);
             var categoryRepo = new CategoryRepository();
             categoryService = new CategoryService(categoryRepo);
-            var taskRepo = new CSVTaskRepository();
+            var taskRepo = new TaskRepository();
             taskService = new TaskService(taskRepo);
 
             PopulateForm();
