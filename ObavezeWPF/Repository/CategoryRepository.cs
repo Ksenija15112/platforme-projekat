@@ -82,7 +82,7 @@ namespace ObavezeWPF.Repository
 
         public void Save(Category category)
         {
-            var categories = GetAll();
+            /*var categories = GetAll();
 
             var isNew = category.Id == 0;
             if (isNew)
@@ -116,7 +116,29 @@ namespace ObavezeWPF.Repository
                 {
                     sw.WriteLine(acategory.ToCSV());
                 }
+            }*/
+            string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            SqlCommand command = conn.CreateCommand();
+            if (category.Id == 0)
+            {
+                command.CommandText ="insert into categories(CategoryName,IsCategoryActive) values (@Name,@IsActive)";
+                command.Parameters.Add(new SqlParameter("@Name",category.Name));
+                command.Parameters.Add(new SqlParameter("@IsActive",category.IsActive));
+                command.ExecuteNonQuery();
+                
             }
+            else
+            {
+                command.CommandText ="update categories set CategoryName=@Name , IsCategoryActive=@IsActive where CategoryID=@Id ";
+                command.Parameters.Add(new SqlParameter("@Id",category.Id));
+                command.Parameters.Add(new SqlParameter("@Name", category.Name));
+                command.Parameters.Add(new SqlParameter("@IsActive", category.IsActive));
+                command.ExecuteNonQuery();
+
+            }
+            conn.Close();
         }
 
         public bool IsInitialized()
