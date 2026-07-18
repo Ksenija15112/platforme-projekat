@@ -56,9 +56,28 @@ namespace ObavezeWPF.Repository
 
         public Category? Get(int id)
         {
-            var categories = GetAll();
+            /*var categories = GetAll();
             var wanted = categories.Find((t) => t.Id == id);
-            return wanted;
+            return wanted;*/
+            string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            SqlCommand command = conn.CreateCommand();
+            command.CommandText = "select*from categories where CategoryID=@Id";
+            command.Parameters.Add(new SqlParameter("@Id", id));
+            var reader = command.ExecuteReader();
+            if (reader.Read())
+            {
+                Model.Category category = new Model.Category();
+                category.Id = Convert.ToInt32(reader["CategoryID"]);
+                category.Name = reader["CategoryName"].ToString();
+                category.IsActive = Convert.ToBoolean(reader["IsCategoryActive"]);
+                return category;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public void Save(Category category)
