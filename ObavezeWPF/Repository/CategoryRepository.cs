@@ -143,11 +143,23 @@ namespace ObavezeWPF.Repository
 
         public bool IsInitialized()
         {
-            if (!File.Exists("categories.csv"))
+            /*if (!File.Exists("categories.csv"))
             {
                 return false;
             }
-            return true;
+            return true;*/
+            string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            try
+            {
+                conn.Open();
+                conn.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }
