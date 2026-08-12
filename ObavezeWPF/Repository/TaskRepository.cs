@@ -20,9 +20,11 @@ namespace ObavezeWPF.Repository
 
                 SqlCommand command = conn.CreateCommand();
                 command.CommandText = @"
-                SELECT * FROM Tasks t
+                SELECT *,l.Name as LabelName,u.Name as UserName FROM Tasks t
                 LEFT JOIN Categories c ON c.CategoryID = t.TaskCategoryID
                 LEFT JOIN States s ON s.StateID = t.TaskStateID
+                LEFT JOIN Labels l on l.Id=t.LabelId
+                LEFT JOIN Users u on u.Id=t.UserId
                 WHERE TaskID = @TaskID";
 
                 command.Parameters.Add(new SqlParameter("TaskID", id));
@@ -47,9 +49,11 @@ namespace ObavezeWPF.Repository
 
                 SqlCommand command = conn.CreateCommand();
                 command.CommandText = @"
-                SELECT * FROM Tasks t
+                SELECT *,l.Name as LabelName,u.Name as UserName FROM Tasks t
                 LEFT JOIN Categories c ON c.CategoryID = t.TaskCategoryID
-                LEFT JOIN States s ON s.StateID = t.TaskStateID";
+                LEFT JOIN States s ON s.StateID = t.TaskStateID
+                LEFT JOIN Labels l on l.Id = t.LabelId
+                LEFT JOIN Users u on u.Id = t.UserId";
 
 
                 return ReadTasksFromReader(command);
@@ -73,8 +77,13 @@ namespace ObavezeWPF.Repository
                 var stateNameIndex = reader.GetOrdinal("StateName");
                 var startDateIndex = reader.GetOrdinal("StartDate");
                 var storyPointsIndex = reader.GetOrdinal("StoryPoints");
+                
                 var LabelIdIndex = reader.GetOrdinal("LabelId");
+                var LabelNameIndex = reader.GetOrdinal("LabelName");
+
+                
                 var UserIdIndex = reader.GetOrdinal("UserId");
+                var UserNameIndex = reader.GetOrdinal("UserName");
 
 
 
@@ -87,9 +96,8 @@ namespace ObavezeWPF.Repository
                         Description = reader.IsDBNull(descriptionIndex) ? null : reader.GetString(descriptionIndex),
                         DueDateTime = reader.IsDBNull(dueDateIndex) ? null : reader.GetDateTime(dueDateIndex),
                         StartDate = reader.GetDateTime(startDateIndex),
-                        StoryPoints=reader.GetInt16(storyPointsIndex),
-                        LabelId=reader.GetInt32(LabelIdIndex),
-                        UserId=reader.GetInt32(UserIdIndex),
+                        StoryPoints = reader.GetInt16(storyPointsIndex),
+                       
                         CategoryId = reader.GetInt32(categoryIdIndex),
                         Category = new Category()
                         {
@@ -103,6 +111,24 @@ namespace ObavezeWPF.Repository
                             Name = reader.GetString(stateNameIndex)
                         }
                     };
+                    if (!reader.IsDBNull(LabelIdIndex))
+                    {
+                        task.Label = new Label()
+                        {
+                            Id = reader.GetInt32(LabelIdIndex),
+                            Name = reader.GetString(LabelNameIndex)
+
+                        };
+                    }
+                    if (!reader.IsDBNull(UserIdIndex))
+                    {
+                        task.User = new User()
+                        {
+                            Id = reader.GetInt32(UserIdIndex),
+                            Name = reader.GetString(UserNameIndex)
+
+                        };
+                    }
 
                     tasks.Add(task);
                 }
@@ -133,7 +159,7 @@ namespace ObavezeWPF.Repository
                 SqlCommand command = conn.CreateCommand();
                 command.CommandText = @"
                 INSERT INTO Tasks (Title, Description, DueDate, TaskCategoryID, TaskStateID,StartDate,StoryPoints,LabelID,UserID) 
-                output inserted.id 
+                output inserted.TaskID 
                 VALUES (@Title, @Description, @DueDate, @CategoryID, @StateID,@StartDate,@StoryPoints,@LabelID,@UserID)";
 
 
@@ -145,8 +171,24 @@ namespace ObavezeWPF.Repository
                 command.Parameters.Add(new SqlParameter("StateID", task.StateId));
                 command.Parameters.Add(new SqlParameter("StartDate", task.StartDate));
                 command.Parameters.Add(new SqlParameter("StoryPoints", task.StoryPoints));
-                command.Parameters.Add(new SqlParameter("LabelID", task.LabelId));
-                command.Parameters.Add(new SqlParameter("UserID", task.UserId));
+               
+                
+                if (task.Label != null)
+                {
+                    command.Parameters.Add(new SqlParameter("LabelID", task.LabelId));
+                }
+                else
+                {
+                    command.Parameters.Add(new SqlParameter("LabelID", DBNull.Value));
+                }
+                if (task.User != null)
+                {
+                    command.Parameters.Add(new SqlParameter("UserID", task.UserId));
+                }
+                else
+                {
+                    command.Parameters.Add(new SqlParameter("UserID", DBNull.Value));
+                }
 
                 var taskId = (int)command.ExecuteScalar();
             }
@@ -173,8 +215,23 @@ namespace ObavezeWPF.Repository
                 command.Parameters.Add(new SqlParameter("StateID", task.StateId));
                 command.Parameters.Add(new SqlParameter("StartDate", task.StartDate));
                 command.Parameters.Add(new SqlParameter("StoryPoints", task.StoryPoints));
-                command.Parameters.Add(new SqlParameter("LabelID", task.LabelId));
-                command.Parameters.Add(new SqlParameter("UserID", task.UserId));
+                if (task.Label != null)
+                {
+                    command.Parameters.Add(new SqlParameter("LabelID", task.LabelId));
+                }
+                else
+                {
+                    command.Parameters.Add(new SqlParameter("LabelID", DBNull.Value));
+                }
+                if (task.User != null)
+                {
+                    command.Parameters.Add(new SqlParameter("UserID", task.UserId));
+                }
+                else
+                {
+                    command.Parameters.Add(new SqlParameter("UserID", DBNull.Value));
+                }
+
 
                 command.ExecuteNonQuery();
             }
@@ -195,7 +252,18 @@ namespace ObavezeWPF.Repository
 
         public bool IsInitialized()
         {
-            throw new NotImplementedException();
+            string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            try
+            {
+                conn.Open();
+                conn.Close();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

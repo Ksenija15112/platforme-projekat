@@ -167,7 +167,6 @@ C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.g.cs
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\App.g.cs
-C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.cache
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\ObavezeWPF_MarkupCompile.lref
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditTaskWindow.baml

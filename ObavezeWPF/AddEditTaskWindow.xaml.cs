@@ -25,7 +25,13 @@ namespace ObavezeWPF
         protected StateService stateService;
         protected CategoryService categoryService;
         protected TaskService taskService;
+        protected LabelService labelService;
+        protected UserService userService;
 
+        
+        
+        
+        
         //protected Model.Task? existingTask;
         public AddEditTaskWindow(Model.Task? task = null)
         {
@@ -40,6 +46,10 @@ namespace ObavezeWPF
             categoryService = new CategoryService(categoryRepo);
             var taskRepo = new TaskRepository();
             taskService = new TaskService(taskRepo);
+            var labelRepo = new LabelRepository();
+            labelService = new LabelService(labelRepo);
+            var userRepo = new UserRepository();
+            userService = new UserService(userRepo);
 
             PopulateForm();
         }
@@ -51,6 +61,8 @@ namespace ObavezeWPF
         
             CategoryCB.ItemsSource = categoryService.GetAll();
             StateCB.ItemsSource = stateService.GetAll();
+            LabelCB.ItemsSource = labelService.Iscitaj();
+            UserCB.ItemsSource = userService.Iscitaj();
             
             /*var states = stateService.GetAll();
             foreach (var state in states)

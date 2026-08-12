@@ -12,7 +12,7 @@ namespace ObavezeWPF.Model
         public string Title { get; set; } = "";
         public string? Description { get; set; }
         public DateTime? DueDateTime { get; set; }
-        public DateTime StartDate { get; set; }
+        public DateTime? StartDate { get; set; }
         public short StoryPoints { get; set; }
 
         public int CategoryId { get; set; }

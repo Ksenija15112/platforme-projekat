@@ -72,12 +72,16 @@ namespace ObavezeWPF.Repository
                 category.Id = Convert.ToInt32(reader["CategoryID"]);
                 category.Name = reader["CategoryName"].ToString();
                 category.IsActive = Convert.ToBoolean(reader["IsCategoryActive"]);
+                conn.Close();
                 return category;
+                
             }
             else
             {
+                conn.Close();
                 return null;
             }
+           
         }
 
         public void Save(Category category)
