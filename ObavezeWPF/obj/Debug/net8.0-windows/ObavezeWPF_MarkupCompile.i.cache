@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\App.xaml
-42041321292
+61906612189
 
-34-1352337148
+36985317230
 216-1757562979
-AddEditLabelWindow.xaml;AddEditTaskWindow.xaml;LabelsWindow.xaml;MainWindow.xaml;
+AddEditLabelWindow.xaml;AddEditTaskWindow.xaml;AddEditUserWindow.xaml;LabelsWindow.xaml;MainWindow.xaml;UsersWindow.xaml;
 
-False
+True
 

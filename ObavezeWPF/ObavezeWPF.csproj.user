@@ -8,7 +8,13 @@
     <Compile Update="AddEditTaskWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddEditUserWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LabelsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UsersWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -16,7 +22,13 @@
     <Page Update="AddEditLabelWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="AddEditUserWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LabelsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UsersWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

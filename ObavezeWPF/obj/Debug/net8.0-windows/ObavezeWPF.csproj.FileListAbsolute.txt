@@ -187,3 +187,5 @@ C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditLabelWindow.baml
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\LabelsWindow.g.cs
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\LabelsWindow.baml
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\UsersWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\UsersWindow.baml
