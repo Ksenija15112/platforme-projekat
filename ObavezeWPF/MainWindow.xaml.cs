@@ -57,6 +57,13 @@ namespace ObavezeWPF
 
 
         }
+        private void OsveziTaskove()
+        {
+            List<Model.Task> tasks= taskService.GetAll();
+            TasksView = CollectionViewSource.GetDefaultView(tasks);
+            TasksView.Filter = (task) => (task as Model.Task).Title.Contains(TitleSearchQuery ?? "");
+            TasksDG.ItemsSource = TasksView;
+        }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
@@ -64,7 +71,7 @@ namespace ObavezeWPF
             var changesMade = addEditTaskWindow.ShowDialog();
             if (changesMade == true)
             {
-                TasksDG.ItemsSource = taskService.GetAll();
+                OsveziTaskove();
             }
         }
 
@@ -77,7 +84,7 @@ namespace ObavezeWPF
                 var changesMade = addEditTaskWindow.ShowDialog();
                 if (changesMade == true)
                 {
-                    TasksDG.ItemsSource = taskService.GetAll();
+                    OsveziTaskove();
                 }
             }
         }
@@ -85,6 +92,21 @@ namespace ObavezeWPF
         {
             LabelsWindow labelsWindow = new LabelsWindow();
             labelsWindow.ShowDialog();
+        }
+        //delete dugme
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Model.Task izabranRed = TasksDG.SelectedItem as Model.Task;
+
+            if (izabranRed!=null)
+            {
+                taskService.Obrisi(izabranRed.Id);
+                OsveziTaskove();
+            }
+            else
+            {
+                MessageBox.Show("You haven't selected a row");
+            }
         }
     }
 }

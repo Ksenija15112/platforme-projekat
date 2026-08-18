@@ -39,23 +39,51 @@ namespace ObavezeWPF
         private void dugmeSave_Click(object sender, RoutedEventArgs e)
         {
             Model.User user2 = DataContext as  Model.User;
-            
+            //validacija
+
+            if(string.IsNullOrWhiteSpace(user2.Name))
+            {
+                MessageBox.Show("Name has not been entered.");
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(user2.Email))
+            {
+                MessageBox.Show("Email has not been entered.");
+                return;
+            }
+           
+
             Repository.UserRepository userrepository = new UserRepository();
             Service.UserService userservice = new Service.UserService(userrepository);
             if (!IsEdit)
             {
-                user2.Password = unosPassword.Password;
-                userservice.Dodaj(user2);
+                if (string.IsNullOrWhiteSpace(unosPassword.Password))
+                {
+                    MessageBox.Show("Password has not been entered");
+                    return;
+                }
+                else
+                {
+                    user2.Password = unosPassword.Password;
+                    //hash
+                    string hashedPassword =BCrypt.Net.BCrypt.HashPassword(user2.Password);
+                    user2.Password = hashedPassword;
+                    userservice.Dodaj(user2);
+                }
                 
             }
             else
             {
-                if (unosPassword.Password != "")
+                if (!string.IsNullOrWhiteSpace(unosPassword.Password))
                 {
 
                     user2.Password = unosPassword.Password;
+                    //hash
+                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(user2.Password);
+                    user2.Password = hashedPassword;
 
                 }
+
                 userservice.Izmeni(user2);
                 
             }

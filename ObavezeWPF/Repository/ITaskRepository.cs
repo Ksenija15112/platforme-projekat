@@ -12,5 +12,7 @@ namespace ObavezeWPF.Repository
         List<Model.Task> GetAll();
         Model.Task? Get(int id);
         void Save(Model.Task task);
+
+        void Delete(int id);
     }
 }
