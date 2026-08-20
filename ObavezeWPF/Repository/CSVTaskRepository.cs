@@ -107,5 +107,10 @@ namespace ObavezeWPF.Repository
             }
             return true;
         }
+
+        public void Delete(int id)
+        {
+
+        }
     }
 }

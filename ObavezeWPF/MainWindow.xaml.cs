@@ -24,6 +24,8 @@ namespace ObavezeWPF
 
         LabelService labelService;
 
+        public Model.User UlogovaniUser { get; set; }
+
         private string titleSearchQuery = string.Empty;
         public string TitleSearchQuery
         {
@@ -55,6 +57,14 @@ namespace ObavezeWPF
 
 
 
+
+        }
+
+        public MainWindow(Model.User user)
+        {
+            InitializeComponent();
+            this.UlogovaniUser = user;
+            DataContext=this;
 
         }
         private void OsveziTaskove()
@@ -92,6 +102,12 @@ namespace ObavezeWPF
         {
             LabelsWindow labelsWindow = new LabelsWindow();
             labelsWindow.ShowDialog();
+        }
+
+        private void usersClick(object sender, RoutedEventArgs e)
+        {
+            UsersWindow usersWindow = new UsersWindow();
+            usersWindow.ShowDialog();
         }
         //delete dugme
         private void Button_Click(object sender, RoutedEventArgs e)

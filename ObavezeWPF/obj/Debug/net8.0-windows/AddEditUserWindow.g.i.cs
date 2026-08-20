@@ -85,7 +85,7 @@ namespace ObavezeWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;V1.0.0.0;component/addedituserwindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;component/addedituserwindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddEditUserWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -35,6 +35,11 @@ namespace ObavezeWPF.Service
             userrepository.Obrisi(id);
         }
 
+        public Model.User? PronadjiPoEmailu(string email)
+        {
+            return  userrepository.PronadjiPoEmailu(email);
+        }
+
     }
 }
 

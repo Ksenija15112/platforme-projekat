@@ -33,6 +33,7 @@
                 <MenuItem Header="States" />
                 <MenuItem Header="Tasks" />
                 <MenuItem Header="Labels" Click="labelsClick" />
+                <MenuItem Header="Users" Click="usersClick"/>
             </MenuItem>
         </Menu>
 
@@ -57,6 +58,8 @@
                 Width="150"
                 Text="{Binding Path=TitleSearchQuery, UpdateSourceTrigger=PropertyChanged}"
                 />
+            <TextBlock Name="ulogovaniKorisnikText" Text="Logged in as:" Margin="15,0,0,0"  HorizontalAlignment="Right" VerticalAlignment="Center"/>
+            <TextBlock Text="{Binding UlogovaniUser.Name}" VerticalAlignment="Center" HorizontalAlignment="Left" Width="150"/>
         </StackPanel>
         
 

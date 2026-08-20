@@ -16,6 +16,8 @@ namespace ObavezeWPF.Repository
 
             void Obrisi(int Id);
 
+            Model.User? PronadjiPoEmailu(string email);
+
         
     }
 }

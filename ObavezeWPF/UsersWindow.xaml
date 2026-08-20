@@ -12,7 +12,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Korisnici" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Text="Users" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <DataGrid Name="userstabela" Grid.Row="1" FontSize="30" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}"/>

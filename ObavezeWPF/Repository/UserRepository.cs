@@ -46,6 +46,29 @@ namespace ObavezeWPF.Repository
             return lista;
         }
 
+        public Model.User? PronadjiPoEmailu(string email)
+        {
+            Model.User? user = null;
+            string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            SqlCommand command = conn.CreateCommand();
+            command.CommandText = "select*from Users where email=@email";
+            command.Parameters.Add(new SqlParameter("@email",email));
+            var reader = command.ExecuteReader();
+            while (reader.Read())
+            {
+                user = new Model.User();
+                user.Id = Convert.ToInt32(reader["Id"]);
+                user.Name = Convert.ToString(reader["Name"]);
+                user.Email = Convert.ToString(reader["Email"]);
+                user.Password = Convert.ToString(reader["Password"]);
+            }
+            conn.Close();
+            return user;
+            
+        }
+
         public void Izmeni(User user)
         {
             string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
@@ -72,5 +95,7 @@ namespace ObavezeWPF.Repository
             command.ExecuteNonQuery();
             conn.Close();
         }
+
+        
     }
 }
