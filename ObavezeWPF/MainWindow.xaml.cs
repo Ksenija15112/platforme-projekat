@@ -64,13 +64,31 @@ namespace ObavezeWPF
         {
             InitializeComponent();
             this.UlogovaniUser = user;
-            DataContext=this;
+            ITaskRepository taskRepository = new TaskRepository();
+            taskService = new TaskService(taskRepository);
+
+           
+            LabelRepository labelRepository = new LabelRepository();
+            labelService = new LabelService(labelRepository);
+
+            DataContext = this;
+            OsveziTaskove();
 
         }
         private void OsveziTaskove()
         {
             List<Model.Task> tasks= taskService.GetAll();
-            TasksView = CollectionViewSource.GetDefaultView(tasks);
+           
+            List<Model.Task> mojiTaskovi = new List<Model.Task>();
+            foreach(var i in tasks)
+            {
+                if (i.UserId == UlogovaniUser.Id)
+                {
+                    mojiTaskovi.Add(i);
+                }
+            }
+            
+            TasksView = CollectionViewSource.GetDefaultView(mojiTaskovi);
             TasksView.Filter = (task) => (task as Model.Task).Title.Contains(TitleSearchQuery ?? "");
             TasksDG.ItemsSource = TasksView;
         }
@@ -90,12 +108,20 @@ namespace ObavezeWPF
             var selectedItem = TasksDG.SelectedItem as Model.Task;
             if (selectedItem != null)
             {
-                var addEditTaskWindow = new AddEditTaskWindow(selectedItem);
-                var changesMade = addEditTaskWindow.ShowDialog();
-                if (changesMade == true)
+                if (UlogovaniUser.Id == selectedItem.UserId)
                 {
-                    OsveziTaskove();
+                    var addEditTaskWindow = new AddEditTaskWindow(selectedItem);
+                    var changesMade = addEditTaskWindow.ShowDialog();
+                    if (changesMade == true)
+                    {
+                        OsveziTaskove();
+                    }
                 }
+                
+            }
+            else
+            {
+                MessageBox.Show("You haven't selected a task.");
             }
         }
         private void labelsClick(object sender, RoutedEventArgs e)
@@ -116,8 +142,12 @@ namespace ObavezeWPF
 
             if (izabranRed!=null)
             {
-                taskService.Obrisi(izabranRed.Id);
-                OsveziTaskove();
+                if (UlogovaniUser.Id == izabranRed.UserId)
+                {
+                    taskService.Obrisi(izabranRed.Id);
+                    OsveziTaskove();
+                }
+                
             }
             else
             {
