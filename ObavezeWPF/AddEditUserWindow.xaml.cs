@@ -38,10 +38,10 @@ namespace ObavezeWPF
         }
         private void dugmeSave_Click(object sender, RoutedEventArgs e)
         {
-            Model.User user2 = DataContext as  Model.User;
+            Model.User user2 = DataContext as Model.User;
             //validacija
 
-            if(string.IsNullOrWhiteSpace(user2.Name))
+            if (string.IsNullOrWhiteSpace(user2.Name))
             {
                 MessageBox.Show("Name has not been entered.");
                 return;
@@ -51,12 +51,28 @@ namespace ObavezeWPF
                 MessageBox.Show("Email has not been entered.");
                 return;
             }
-           
+            if (!user2.Email.Contains("@"))
+            {
+                MessageBox.Show("Email format is not valid.");
+                return;
+            }
+
 
             Repository.UserRepository userrepository = new UserRepository();
             Service.UserService userservice = new Service.UserService(userrepository);
+
+           
+
+
             if (!IsEdit)
             {
+                Model.User? rezultatPretrageEmail = userservice.PronadjiPoEmailu(user2.Email);
+                if (rezultatPretrageEmail != null)
+                {
+                    MessageBox.Show("A user with this email already exists.");
+                    return;
+                }
+
                 if (string.IsNullOrWhiteSpace(unosPassword.Password))
                 {
                     MessageBox.Show("Password has not been entered");
@@ -74,6 +90,14 @@ namespace ObavezeWPF
             }
             else
             {
+                //sprecava da dva korisnika imaju isti email
+                Model.User? rezultatPretrageEmail = userservice.PronadjiPoEmailu(user2.Email);
+                if (rezultatPretrageEmail!=null && user2.Id!=rezultatPretrageEmail.Id)
+                {
+                    MessageBox.Show("This email is already in use.");
+                    return;
+                }
+
                 if (!string.IsNullOrWhiteSpace(unosPassword.Password))
                 {
 

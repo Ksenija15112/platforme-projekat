@@ -13,7 +13,7 @@
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
         <TextBlock Text="Users" FontSize="40" VerticalAlignment="Center" HorizontalAlignment="Center"/>
-        <DataGrid Name="userstabela" Grid.Row="1" FontSize="30" AutoGenerateColumns="False">
+        <DataGrid Name="userstabela" Grid.Row="1" FontSize="30" AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}"/>
                 <DataGridTextColumn Header="Name" Width="*" Binding="{Binding Name}"/>

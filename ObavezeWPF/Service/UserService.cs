@@ -34,7 +34,7 @@ namespace ObavezeWPF.Service
         {
             userrepository.Obrisi(id);
         }
-
+        // Metoda se koristi za proveru da li već postoji korisnik sa unetim emailom.
         public Model.User? PronadjiPoEmailu(string email)
         {
             return  userrepository.PronadjiPoEmailu(email);
