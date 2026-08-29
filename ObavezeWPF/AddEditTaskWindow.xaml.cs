@@ -28,17 +28,23 @@ namespace ObavezeWPF
         protected LabelService labelService;
         protected UserService userService;
 
+        protected Model.User ulogovaniUser;
         
         
         
         
         //protected Model.Task? existingTask;
-        public AddEditTaskWindow(Model.Task? task = null)
+        public AddEditTaskWindow(Model.User user,Model.Task? task = null)
         {
             InitializeComponent();
 
+            ulogovaniUser = user;
+
             //existingTask = task;
             DataContext = task != null ? task.Clone() : new Model.Task();
+
+            Model.Task task2 = DataContext as Model.Task;
+            task2.User = user;
 
             var stateRepo = new StateRepository();
             stateService = new StateService(stateRepo);
@@ -58,11 +64,33 @@ namespace ObavezeWPF
         {
             // Popuniti State i Category ComboBoxes
             // Ako je edit u pitanju, postaviti vrednosti...
-        
+
+            Model.Task task2 = DataContext as Model.Task;
             CategoryCB.ItemsSource = categoryService.GetAll();
             StateCB.ItemsSource = stateService.GetAll();
             LabelCB.ItemsSource = labelService.Iscitaj();
             UserCB.ItemsSource = userService.Iscitaj();
+
+            foreach(Model.User i in UserCB.ItemsSource)
+            {
+                if (i.Id == ulogovaniUser.Id)
+                {
+                    UserCB.SelectedItem = i;
+                    break;
+
+                }
+            }
+
+            foreach(Model.Label i in LabelCB.ItemsSource)
+            {
+                
+                if (i.Id == task2.LabelId)
+                {
+                    LabelCB.SelectedItem = i;
+                    break;
+                }
+                
+            }
             
             /*var states = stateService.GetAll();
             foreach (var state in states)
@@ -156,7 +184,56 @@ namespace ObavezeWPF
                 task.State = stateService.Get(stateId);
             }*/
 
-            taskService.Save((Model.Task) DataContext);
+            //validacija
+
+            Model.Task task = DataContext as Model.Task;
+
+            if (string.IsNullOrWhiteSpace(task.Title))
+            {
+                MessageBox.Show("Invalid title.");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(task.Description))
+            {
+                MessageBox.Show("Invalid description.");
+                return;
+            }
+
+            if (task.StartDate != null && task.DueDateTime != null)
+            {
+                if (task.StartDate > task.DueDateTime)
+                {
+                    MessageBox.Show("Due date cannot be before start date.");
+                    return;
+                }
+            }
+
+            if (task.StoryPoints <= 0)
+            {
+                MessageBox.Show("Story points must be greater than zero.");
+                return;
+            }
+
+            if (CategoryCB.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a category.");
+                return;
+            }
+
+            if (StateCB.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a state.");
+                return;
+            }
+
+            if (UserCB.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a user.");
+                return;
+            }
+
+            taskService.Save(task);
 
             DialogResult = true;
             Close();

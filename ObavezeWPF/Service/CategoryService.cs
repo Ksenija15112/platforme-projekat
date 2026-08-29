@@ -19,5 +19,6 @@ namespace ObavezeWPF.Service
         public List<Category> GetAll() {  return CategoryRepository.GetAll(); }
         public Category? Get(int id) { return CategoryRepository.Get(id); }
         public void Save(Category category) { CategoryRepository.Save(category); }
+        public void Delete(int id) { CategoryRepository.Delete(id); }
     }
 }

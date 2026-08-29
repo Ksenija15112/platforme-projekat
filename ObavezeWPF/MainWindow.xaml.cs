@@ -95,7 +95,7 @@ namespace ObavezeWPF
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-            var addEditTaskWindow = new AddEditTaskWindow();
+            var addEditTaskWindow = new AddEditTaskWindow(UlogovaniUser);
             var changesMade = addEditTaskWindow.ShowDialog();
             if (changesMade == true)
             {
@@ -110,7 +110,7 @@ namespace ObavezeWPF
             {
                 if (UlogovaniUser.Id == selectedItem.UserId)
                 {
-                    var addEditTaskWindow = new AddEditTaskWindow(selectedItem);
+                    var addEditTaskWindow = new AddEditTaskWindow(UlogovaniUser,selectedItem);
                     var changesMade = addEditTaskWindow.ShowDialog();
                     if (changesMade == true)
                     {
@@ -135,6 +135,14 @@ namespace ObavezeWPF
             UsersWindow usersWindow = new UsersWindow();
             usersWindow.ShowDialog();
         }
+        private void categoriesClick(object sender, RoutedEventArgs e)
+        {
+            CategoriesWindow categoriesWindow = new CategoriesWindow();
+            categoriesWindow.ShowDialog();
+            
+        }
+
+
         //delete dugme
         private void Button_Click(object sender, RoutedEventArgs e)
         {

@@ -85,7 +85,7 @@ namespace ObavezeWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;V1.0.0.0;component/userswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;component/userswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UsersWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -145,6 +145,18 @@ namespace ObavezeWPF.Repository
             conn.Close();
         }
 
+        public void Delete(int Id)
+        {
+            string connectionString= @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+            SqlCommand command = conn.CreateCommand();
+            command.CommandText = "delete from Categories where CategoryID=@Id";
+            command.Parameters.Add(new SqlParameter("@Id",Id));
+            command.ExecuteNonQuery();
+            conn.Close();
+        }
+
         public bool IsInitialized()
         {
             /*if (!File.Exists("categories.csv"))

@@ -13,5 +13,6 @@ namespace ObavezeWPF.Repository
         List<Category> GetAll();
         Category? Get(int id);
         void Save(Category category);
+        void Delete(int id);
     }
 }

@@ -29,7 +29,7 @@
             Grid.ColumnSpan="3">
             <MenuItem
                 Header="Entities">
-                <MenuItem Header="Categories" />
+                <MenuItem Header="Categories" Click="categoriesClick" />
                 <MenuItem Header="States" />
                 <MenuItem Header="Tasks" />
                 <MenuItem Header="Labels" Click="labelsClick" />
