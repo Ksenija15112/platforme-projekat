@@ -9,9 +9,10 @@ namespace ObavezeWPF.Repository
 {
     public interface IStateRepository
     {
-        bool IsInitialized();
+       // bool IsInitialized();
         List<State> GetAll();
         State? Get(int id);
         void Save(State state);
+        void Delete(int id);
     }
 }

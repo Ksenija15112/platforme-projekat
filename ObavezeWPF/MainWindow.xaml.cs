@@ -141,7 +141,12 @@ namespace ObavezeWPF
             categoriesWindow.ShowDialog();
             
         }
+        private void statesClick(object sender, RoutedEventArgs e)
+        {
+            StatesWindow statesWindow = new StatesWindow();
+            statesWindow.ShowDialog();
 
+        }
 
         //delete dugme
         private void Button_Click(object sender, RoutedEventArgs e)

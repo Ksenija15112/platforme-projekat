@@ -8,6 +8,9 @@
     <Compile Update="AddEditLabelWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="AddEditStatesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="AddEditTaskWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -23,6 +26,9 @@
     <Compile Update="LoginWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="StatesWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UsersWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +38,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddEditLabelWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddEditStatesWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddEditUserWindow.xaml">
@@ -44,6 +53,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatesWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UsersWindow.xaml">

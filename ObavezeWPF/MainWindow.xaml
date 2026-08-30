@@ -30,7 +30,7 @@
             <MenuItem
                 Header="Entities">
                 <MenuItem Header="Categories" Click="categoriesClick" />
-                <MenuItem Header="States" />
+                <MenuItem Header="States" Click="statesClick" />
                 <MenuItem Header="Tasks" />
                 <MenuItem Header="Labels" Click="labelsClick" />
                 <MenuItem Header="Users" Click="usersClick"/>

@@ -198,3 +198,7 @@ C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\CategoriesWindow.baml
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditCategoriesWindow.g.cs
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditCategoriesWindow.baml
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditStatesWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\StatesWindow.g.cs
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\AddEditStatesWindow.baml
+C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\obj\Debug\net8.0-windows\StatesWindow.baml

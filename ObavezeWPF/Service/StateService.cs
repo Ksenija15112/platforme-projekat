@@ -19,5 +19,7 @@ namespace ObavezeWPF.Service
         public List<State> GetAll() {  return StateRepository.GetAll(); }
         public State? Get(int id) { return StateRepository.Get(id); }
         public void Save(State state) { StateRepository.Save(state); }
+
+        public void Delete(int id) { StateRepository.Delete(id); }
     }
 }
