@@ -167,5 +167,21 @@ namespace ObavezeWPF
                 MessageBox.Show("You haven't selected a row");
             }
         }
+
+        private void historyClick(object sender, RoutedEventArgs e)
+        {
+            Model.Task izabraniTask = TasksDG.SelectedItem as Model.Task;
+
+            if (izabraniTask != null)
+            {
+                TaskHistoryWindow taskHistoryWindow = new TaskHistoryWindow(izabraniTask);
+                taskHistoryWindow.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("You haven't selected a task.");
+            }
+
+        }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Korisnik\OneDrive\Desktop\platforme projekat\ObavezeWPF\ObavezeWPF\App.xaml
-11-74309446
+121172717100
 
-41353265210
+461620152427
 217-1423374950
-AddEditCategoriesWindow.xaml;AddEditLabelWindow.xaml;AddEditStatesWindow.xaml;AddEditTaskWindow.xaml;AddEditUserWindow.xaml;CategoriesWindow.xaml;LabelsWindow.xaml;LoginWindow.xaml;MainWindow.xaml;StatesWindow.xaml;UsersWindow.xaml;
+AddEditCategoriesWindow.xaml;AddEditLabelWindow.xaml;AddEditStatesWindow.xaml;AddEditTaskWindow.xaml;AddEditUserWindow.xaml;CategoriesWindow.xaml;LabelsWindow.xaml;LoginWindow.xaml;MainWindow.xaml;StatesWindow.xaml;TaskHistoryWindow.xaml;UsersWindow.xaml;
 
 True
 

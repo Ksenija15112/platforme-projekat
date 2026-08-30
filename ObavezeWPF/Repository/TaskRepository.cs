@@ -1,6 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.Win32.SafeHandles;
 using ObavezeWPF.Model;
+using ObavezeWPF.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -190,7 +191,21 @@ namespace ObavezeWPF.Repository
                     command.Parameters.Add(new SqlParameter("UserID", DBNull.Value));
                 }
 
-                var taskId = (int)command.ExecuteScalar();
+                task.Id = (int)command.ExecuteScalar();
+
+                //TaskEvent
+                // Beleženje događaja kreiranja Task-a
+                Model.TaskEvent taskEvent = new Model.TaskEvent();
+                 taskEvent.TaskId=task.Id;
+                 taskEvent.EventType = "created";
+                 taskEvent.Description = "Task was created";
+                 taskEvent.EventDate = DateTime.Now;
+                 taskEvent.UserId = task.UserId;
+
+                Repository.TaskEventRepository taskEventRepository = new Repository.TaskEventRepository();
+                Service.TaskEventService taskEventService = new TaskEventService(taskEventRepository);
+
+                taskEventService.Add(taskEvent);
             }
         }
 
@@ -234,11 +249,28 @@ namespace ObavezeWPF.Repository
 
 
                 command.ExecuteNonQuery();
+
+                //novi zapis istorije
+
+                Model.TaskEvent taskEvent = new Model.TaskEvent();
+                taskEvent.TaskId = task.Id;
+                taskEvent.EventType = "updated";
+                taskEvent.Description = "Task was updated";
+                taskEvent.EventDate = DateTime.Now;
+                taskEvent.UserId = task.UserId;
+
+                Repository.TaskEventRepository taskEventRepository = new Repository.TaskEventRepository();
+                Service.TaskEventService taskEventService = new TaskEventService(taskEventRepository);
+
+                taskEventService.Add(taskEvent);
             }
         }
 
         public void Delete(int Id)
         {
+            Model.Task task = Get(Id);
+        
+
             string connectionString = @"Data Source=DESKTOP-CF74DNQ\MSSQLSERVER3;Initial Catalog=projekatPlatforme;Integrated Security=True;Trust Server Certificate=True";
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
@@ -246,6 +278,20 @@ namespace ObavezeWPF.Repository
             command.CommandText = "DELETE FROM Tasks where TaskID=@TaskID";
             SqlParameter parameter = new SqlParameter("TaskID",Id);
             command.Parameters.Add(parameter);
+            
+
+            Model.TaskEvent taskEvent = new Model.TaskEvent();
+
+            taskEvent.TaskId = task.Id;
+            taskEvent.EventType = "deleted";
+            taskEvent.Description = "Task was deleted";
+            taskEvent.EventDate = DateTime.Now;
+            taskEvent.UserId = task.UserId;
+
+            Repository.TaskEventRepository taskEventRepository = new Repository.TaskEventRepository();
+            Service.TaskEventService taskEventService = new TaskEventService(taskEventRepository);
+
+            taskEventService.Add(taskEvent);
             command.ExecuteNonQuery();
             conn.Close();
         }

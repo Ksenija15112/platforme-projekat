@@ -61,7 +61,7 @@ namespace ObavezeWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;V1.0.0.0;component/addeditstateswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;component/addeditstateswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AddEditStatesWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -45,6 +45,7 @@
                 <Button Name="AddBtn" Content="Add" Click="AddBtn_Click" />
                 <Button Name="EditBtn" Content="Edit" RenderTransformOrigin="0.5,0.5" Click="EditBtn_Click"/>
                 <Button Content="Delete" Click="Button_Click" />
+                <Button Content="History" Click="historyClick"/>
             </ToolBar>
         </ToolBarTray>
 

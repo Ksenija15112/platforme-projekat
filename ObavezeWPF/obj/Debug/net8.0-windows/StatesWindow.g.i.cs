@@ -61,7 +61,7 @@ namespace ObavezeWPF {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;V1.0.0.0;component/stateswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ObavezeWPF;component/stateswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\StatesWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

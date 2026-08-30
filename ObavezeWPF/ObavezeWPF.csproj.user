@@ -29,6 +29,9 @@
     <Compile Update="StatesWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="TaskHistoryWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UsersWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -56,6 +59,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="StatesWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TaskHistoryWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UsersWindow.xaml">
