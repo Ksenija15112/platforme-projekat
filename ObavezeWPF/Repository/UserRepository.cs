@@ -16,10 +16,20 @@ namespace ObavezeWPF.Repository
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             SqlCommand command = conn.CreateCommand();
-            command.CommandText = "insert into users(Name,Email,Password) values (@Name,@Email,@Password)";
+            command.CommandText = "insert into users(Name,Email,Password,ImagePath) values (@Name,@Email,@Password,@ImagePath)";
             command.Parameters.Add(new SqlParameter("@Name", user.Name));
             command.Parameters.Add(new SqlParameter("@Email", user.Email));
             command.Parameters.Add(new SqlParameter("@Password", user.Password));
+           
+            if (user.ImagePath != null)
+            {
+                command.Parameters.Add(new SqlParameter("@ImagePath", user.ImagePath));
+            }
+            else
+            {
+                command.Parameters.Add(new SqlParameter("@ImagePath", DBNull.Value));
+            }
+
             command.ExecuteNonQuery();
             conn.Close();
         }
@@ -40,6 +50,7 @@ namespace ObavezeWPF.Repository
                 user.Name = reader["Name"].ToString();
                 user.Email = reader["Email"].ToString();
                 user.Password = reader["Password"].ToString();
+                user.ImagePath = reader["ImagePath"].ToString();
                 lista.Add(user);
             }
             conn.Close();
@@ -75,11 +86,19 @@ namespace ObavezeWPF.Repository
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             SqlCommand command = conn.CreateCommand();
-            command.CommandText = "update users set Name=@Name,Email=@Email,Password=@Password where Id=@Id";
+            command.CommandText = "update users set Name=@Name,Email=@Email,Password=@Password,ImagePath=@ImagePath where Id=@Id";
             command.Parameters.Add(new SqlParameter("@Name", user.Name));
             command.Parameters.Add(new SqlParameter("@Email", user.Email));
             command.Parameters.Add(new SqlParameter("@Password", user.Password));
             command.Parameters.Add(new SqlParameter("@Id", user.Id));
+            if (user.ImagePath != null)
+            {
+                command.Parameters.Add(new SqlParameter("@ImagePath", user.ImagePath));
+            }
+            else
+            {
+                command.Parameters.Add(new SqlParameter("@ImagePath", DBNull.Value));
+            }
             command.ExecuteNonQuery();
             conn.Close();
         }

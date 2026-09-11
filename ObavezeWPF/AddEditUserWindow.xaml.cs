@@ -34,6 +34,16 @@ namespace ObavezeWPF
             DataContext = user;
             IsEdit = true;
 
+            if (!string.IsNullOrWhiteSpace(user.ImagePath))
+            {
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(user.ImagePath);
+                bitmap.EndInit();
+
+                slikaKorisnika.Source = bitmap;
+            }
+
 
         }
         private void dugmeSave_Click(object sender, RoutedEventArgs e)
@@ -112,6 +122,22 @@ namespace ObavezeWPF
                 
             }
             Close();
+        }
+
+        private void dugmeZaSliku_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog openFileDialog = new Microsoft.Win32.OpenFileDialog();
+            var rezultat = openFileDialog.ShowDialog();
+            if (rezultat == true)
+            {
+                Model.User user = DataContext as Model.User;
+                user.ImagePath = openFileDialog.FileName;
+                BitmapImage bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(user.ImagePath);
+                bitmap.EndInit();
+                slikaKorisnika.Source = bitmap;
+            }
         }
     }
 }

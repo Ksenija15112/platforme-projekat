@@ -13,6 +13,8 @@ namespace ObavezeWPF.Model
         public string Email { get; set; }
         public string Password { get; set; }
 
+        public string ImagePath { get; set; }
+
         public User(int Id,string Name, string Email, string Password)
 
         {
