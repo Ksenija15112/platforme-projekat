@@ -32,6 +32,7 @@ namespace ObavezeWPF.Model
                     category = null;
                     CategoryId = 0;
                 }
+            
             }
         }
 

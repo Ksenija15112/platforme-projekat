@@ -147,7 +147,12 @@ namespace ObavezeWPF
             statesWindow.ShowDialog();
 
         }
+        private void boardWindow(object sender, RoutedEventArgs e)
+        {
+            BoardWindow boardWindow = new BoardWindow(UlogovaniUser);
+            boardWindow.ShowDialog();
 
+        }
         //delete dugme
         private void Button_Click(object sender, RoutedEventArgs e)
         {

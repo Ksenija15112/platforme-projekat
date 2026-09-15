@@ -17,6 +17,9 @@
     <Compile Update="AddEditUserWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="BoardWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="CategoriesWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +50,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="AddEditUserWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BoardWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="CategoriesWindow.xaml">
