@@ -56,6 +56,8 @@ namespace ObavezeWPF.Model
                 }
             }
         }
+        public List<Label> Labels { get; set; } = [];
+
         public int UserId { get; set; }
         protected User? user { get; set; }
         public User? User

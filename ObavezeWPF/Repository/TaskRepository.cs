@@ -123,6 +123,7 @@ namespace ObavezeWPF.Repository
                     }
                     if (!reader.IsDBNull(UserIdIndex))
                     {
+                        task.UserId = reader.GetInt32(UserIdIndex);
                         task.User = new User()
                         {
                             Id = reader.GetInt32(UserIdIndex),

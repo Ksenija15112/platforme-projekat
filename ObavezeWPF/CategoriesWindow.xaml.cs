@@ -28,7 +28,7 @@ namespace ObavezeWPF
             categoryRepository = new Repository.CategoryRepository();
             categoryService = new Service.CategoryService(categoryRepository);
 
-            
+            CategoryDG.ItemsSource = categoryService.GetAll();
         }
 
        

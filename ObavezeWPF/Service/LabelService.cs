@@ -32,6 +32,9 @@ namespace ObavezeWPF.Service
 
         public void Obrisi(int id)
         {
+            TaskLabelRepository taskLabelRepository = new TaskLabelRepository();
+            taskLabelRepository.ObrisiLabelu(id);
+
             labelrepository.Obrisi(id);
         }
 

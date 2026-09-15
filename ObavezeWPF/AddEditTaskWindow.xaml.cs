@@ -68,7 +68,20 @@ namespace ObavezeWPF
             Model.Task task2 = DataContext as Model.Task;
             CategoryCB.ItemsSource = categoryService.GetAll();
             StateCB.ItemsSource = stateService.GetAll();
-            LabelCB.ItemsSource = labelService.Iscitaj();
+            LabelLB.ItemsSource = labelService.Iscitaj();
+            Repository.TaskLabelRepository taskLabelRepository = new TaskLabelRepository();
+            List<Model.Label> labeleTaska = taskLabelRepository.Labels(task2.Id);
+            foreach (Model.Label label in LabelLB.Items)
+            {
+                foreach (Model.Label labelaTaska in labeleTaska)
+                {
+                    if (label.Id == labelaTaska.Id)
+                    {
+                        LabelLB.SelectedItems.Add(label);
+                        break;
+                    }
+                }
+            }
             UserCB.ItemsSource = userService.Iscitaj();
 
             foreach(Model.User i in UserCB.ItemsSource)
@@ -81,16 +94,7 @@ namespace ObavezeWPF
                 }
             }
 
-            foreach(Model.Label i in LabelCB.ItemsSource)
-            {
-                
-                if (i.Id == task2.LabelId)
-                {
-                    LabelCB.SelectedItem = i;
-                    break;
-                }
-                
-            }
+            
             
             /*var states = stateService.GetAll();
             foreach (var state in states)
@@ -232,9 +236,24 @@ namespace ObavezeWPF
                 MessageBox.Show("Please select a user.");
                 return;
             }
+            task.Labels.Clear();
+
+            foreach (var i in LabelLB.SelectedItems)
+            {
+                Model.Label label = i as Model.Label;
+                task.Labels.Add(label);
+            }
 
             taskService.Save(task);
 
+            TaskLabelRepository taskLabelRepository = new TaskLabelRepository();
+
+            taskLabelRepository.Obrisi(task.Id);
+
+            foreach (Model.Label label in task.Labels)
+            {
+                taskLabelRepository.Dodaj(task.Id, label.Id);
+            }
             DialogResult = true;
             Close();
         }

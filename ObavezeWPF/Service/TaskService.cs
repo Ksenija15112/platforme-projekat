@@ -17,11 +17,24 @@ namespace ObavezeWPF.Service
 
         public List<Model.Task> GetAll() {  return TaskRepository.GetAll(); }
         public Model.Task? Get(int id) { return TaskRepository.Get(id); }
-        public void Save(Model.Task task) { TaskRepository.Save(task); }
+        public void Save(Model.Task task) 
+        { 
+            TaskRepository.Save(task);
+            /*TaskLabelRepository taskLabelRepository = new TaskLabelRepository();
+            taskLabelRepository.Obrisi(task.Id);
+            foreach(var i in task.Labels)
+            {
+
+            }*/
+        
+        }
 
         public void Obrisi(int Id)
         {
-           TaskRepository.Delete(Id);
+            TaskLabelRepository taskLabelRepository = new TaskLabelRepository();
+            taskLabelRepository.Obrisi(Id);
+
+            TaskRepository.Delete(Id);
         }
     }
 }
